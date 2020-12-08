@@ -1,5 +1,9 @@
 package com.hibernate.entities;
 
-public class Transportation {
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
+public class Transportation extends Vehicule {
+	int loadCapacity;
 
 }
