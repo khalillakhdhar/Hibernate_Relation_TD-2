@@ -1,5 +1,13 @@
 package com.hibernate.entities;
+import javax.persistence.Entity;
 
-public class Car {
-
+@Entity
+public class Car extends Passenger {
+int noOfdoors;
+public int getNoOfdoors() {
+return noOfdoors;
+}
+public void setNoOfdoors(int noOfdoors) {
+this.noOfdoors = noOfdoors;
+}
 }
